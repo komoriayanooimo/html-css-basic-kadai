@@ -7,7 +7,7 @@ p{
     font-size: 20px;
 }
 body {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
 }
 a{
@@ -20,17 +20,15 @@ header{
 }
 main{
     padding: 10px 10px;
-    justify-content: space-around;
-    text-align: center;
 }
 #parent{
     display: flex;
+    display: inline-block;
     text-align: center;
-    justify-content: center;
-    flex-grow: 1;
+    justify-content: space-between;
 }
 .contents{
-    border: 3px solid rgb(238, 204 204);
+    border: solid 3px rgb(238, 204 204);
     flex-basis: 25%;
     padding: 10px 15px;
     margin: 20px 0px;
@@ -65,17 +63,10 @@ a:visited{
 a:hover{
     rgb(245, 178, 168)
 }
+
 @media screen and (max-width: 768px) {
-div {
-    display: inline-block;
-}
- h2{
-        font-size: 30px;
-    }
-P{
-        font-size: 25px;
-    }
-#parent {
-    display: flex;
-    flex-wrap: wrap;
+   div {display: inline-block;}
+   h2{font-size: 30px;}
+   P{font-size: 25px;}
+   #parent{flex-direction: column;}
 }
